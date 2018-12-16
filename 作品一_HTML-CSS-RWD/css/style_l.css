@@ -1,0 +1,158 @@
+@charset "utf-8";
+/* CSS Document */
+/*--------1EM=16PX,PX是不能被任何人影響的,但是em是會被父層影響,rem是會被最根層(就是包在整個程式中的最外層)---------*/
+/*--------以下為CSS基本設定---------*/
+body {
+	font-family: "微軟正黑體", sans-serif;
+	color: #333;
+	padding: 24px 10px;
+	margin:0;
+}
+h1, h2, h3, p, div, a, table, th, td, ul, li, small {
+	margin:0;
+	padding:0;
+	line-height:1;
+	font-weight:normal;
+}
+img {
+	border:none;
+}
+p {
+	font-size:16px;
+}
+/*--------以下為版面結構設定---------*/
+
+#container {
+	width: 960px;
+	margin:0 auto;
+}
+#header {
+	margin: auto;
+}
+#header ul {
+	list-style-type: none;
+}
+#header li {
+	display: inline;
+}
+#iconmenu {
+	float: right;
+}
+#iconmenu li {
+	padding: 0 5px;
+}
+#site {
+	float: left;
+}
+#headerimg img {
+	vertical-align:bottom;
+}
+
+#nav {
+	text-transform: uppercase;
+	border-top:1px solid #FFF;
+	background-color: #0097d8;
+	overflow: hidden;
+	font-size:14px;
+	margin-bottom:10px;
+}
+#nav li {
+	float: left;
+	color: #FFF;/*------這邊的NAV用FLOAT是為了不跟下面的DISPLAY衝突，有FLOAT就以FLOAT優先寫，寫不夠用時可以用DISPLAY------*/
+	list-style-type: none;
+}
+#nav li a {
+	display: block;
+	width: 120px;
+	border-right: 1px solid #FFF;
+	text-align: center;
+	text-decoration: none;
+	color: #FFF;
+	padding:10px 0;
+}
+a:link, a:active, a:visited {
+	text-decoration: none;
+}
+#nav li a:hover {
+	background-color: #D64787;
+	text-decoration: underline;
+}
+#content {
+	width: 600px;
+	float: left;
+	margin:0 0 10px 0;
+}
+/*-----這是美化設定-----*/
+
+#content h2 {
+	font-size:1.2em;
+	margin:35px 0 6px 0;
+	padding:0 0 2px 0;
+	border-bottom: solid #966 1px;
+}
+.cat {
+	font-size:0.6em;
+	color:#666;
+	text-decoration:none;
+}
+#content p {
+	line-height: 2;
+}
+.dat {
+	background-color: #0097d8;
+	float:right;
+	text-align:center;
+	color:#FFF;
+	font-widht:blod;
+	padding:18px 12px;
+	border-radius:50px 0px;
+	margin:13px -2px 0;
+}
+.dat span {
+	display:block;
+	line-hight:1px;
+ 	text-align:center font-size:1.2em;
+	color:#FFF;
+}
+#sidebar {
+	width: 300px;
+	float: right;
+	margin: 0 0 10px 0;
+}
+#sidebar h3{
+	color: #F36}
+#sidebar .menu {
+	margin-bottom:50px;
+	padding:10px;
+}
+#sidebar ul {
+	padding: 0;
+	margin: 0;
+	border-bottom: solid #F6C 1px;
+}
+
+.menu li {
+	font-size: 1em;
+	list-style-type: none;	
+}
+.menu li a {
+	display: block;
+	padding:10px 0 15px 15px;
+	border-top: solid 1px #C6F;
+	background-image: url(../images/listmark_O.png);
+	background-repeat: no-repeat;
+	background-position: 0 50%;
+}
+
+.menu li a:hover {
+	background-color:#66c1e8;
+}
+#footer {
+	clear:both;
+	padding:10px 20px;
+	background-color:#0097d8;
+	color:#FFF;
+}
+#footer small {
+	font-size:12px;
+}

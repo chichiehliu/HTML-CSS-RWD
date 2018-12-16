@@ -1,0 +1,21 @@
+@charset "utf-8";
+/* CSS Document */
+
+/*--------以下為版面結構設定---------*/
+#container {
+	width:100%;
+}
+
+#header{
+	margin:0 0 15px;
+	}
+#content {
+	width: 62.5%;
+}
+img {
+	max-width: 100%;
+	height: auto;
+}
+#sidebar {
+	width: 31.25%;
+}
